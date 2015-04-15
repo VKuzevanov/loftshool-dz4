@@ -2,11 +2,159 @@
 <html lang="Ru-ru">
 <head>
 	<meta charset="UTF-8">
-	<title>dz 4</title>
+	<title>Сайт Портфолио</title>
+
+	<!-- faviocn//-->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!-- JS //-->
+	<script type="text/javascript" src="bower/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
+	<!-- css //-->
+	<link rel="stylesheet" type="text/css" href="bower/normalize.css">
+	<link rel="stylesheet" type="text/css" href="fonts/fira/fira.css">
+	<link rel="stylesheet" type="text/css" href="fonts/proximanova/proximanova.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
+<!--[if lt IE 8]>
+            <p>Вы используете <strong>старый браузер</strong>. Пожалуйста <a href="http://browsehappy.com/">обновитье Ваш браузер</a> для нормального отображения сайта!</p>
+	<![endif]-->
 
+	<!--heder//-->
+<div class="header-container">
+	<header class="main-header prefix">
+		<img class="logo" src="img/loft-logo.png" alt="Логотип сайта">
+		<ul class="socials">
+			<li class="social"><a class="social-link vk" href="#">Вконтакте</a></li>
+			<li class="social"><a class="social-link tw" href="#">Twitter</a></li>
+			<li class="social"><a class="social-link fb" href="#">Facebook</a></li>
+			<li class="social"><a class="social-link gt" href="#">Github</a></li>
+		</ul>
+	</header>
+	<div class="rgadient-line"></div>
+	
+</div>
+<div class="content-container prefix">
+<!--sidebar//-->
+		<aside class="sidebar">
+			<nav class="sidebar-block sidebar-menu">
+			<ul class="format-ul">
+					<li class="menu-item" ><a class="menu-item-link" href="http://localhost:8888/#">Обо мне</a></li>
+					<li class="menu-item" ><a class="menu-item-link" href="2">Мои Работы</a></li>
+					<li class="menu-item" ><a class="menu-item-link" href="3">Связаться со мной</a></li>
+			</ul>
+			</nav>
+			<div class="sidebar-block">
+				<h4 class="sidebar-title">
+					Контакты
+				</h4>
+				<ul class="format-ul">
+				<li class="contacts-item mail"><a class="contacts-link " href="mailto:yor.designer@yandex.ru">my-mail@yandex.ru</a></li>
+				<li class="contacts-item tel"><a class="contacts-link " href="tel:+79181675962">+79181675962</a></li>
+				<li class="contacts-item skype"><a class="contacts-link " href="skype:your-designer?chat">your-designer</a></li>
+				</ul>
+			</div>
+		</aside>
+		<!--content//-->
+		<div class="content-wrap">
+		<!--block1//-->
+			<section class="bg-block prefix">
+				<h2 class="section-title">Основная информация</h2>
+				<div class="entry prefix">
+					<img class="img-box" src="/img/my-photo.jpg"  alt="Кузеванов Владислав">	
+					<div class="my-info-box prefix">
+					<ul class="format-ul">
+						<li class="my-info prefix">
+							<div class="my-info-item">Меня зовут:</div>
+							<div class="my-info-answer"> Кузеванов Владислав Геннадьевич</div>
+						</li>
+						<li class="my-info prefix">
+							<div class="my-info-item">Мой возраст:</div>
+							<div class="my-info-answer"> 27 лет</div>
+						</li>
+						<li class="my-info prefix">
+							<div class="my-info-item">Мой город:</div>
+							<div class="my-info-answer"> Краснодар, Россия</div>
+						</li>
+						<li class="my-info prefix">
+							<div class="my-info-item">Моя специализация:</div>
+							<div class="my-info-answer"> FRONTEND разработчик</div>
+						</li>
+						<li class="my-info prefix">
+							<div class="my-info-item">Ключевые навыки:</div>
+							<div class="my-info-answer ckils-box">
+								<ul class="skils-ul">
+									<li class="skils">html</li>
+									<li class="skils">css</li>
+									<li class="skils">javascript</li>
+									<li class="skils">gulp</li>
+									<li class="skils">git</li>																
+								</ul>
+							</div>
+						</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!--block2//-->
+			<section class="bg-block prefix">
+				<h2 class="section-title">Опыт работы</h2>
+				<div class="entry prefix">
+					<ul class="format-ul">
+						<li class="job-item prefix">
+							<div class="info-icon img-job"></div>
+							<div class="job-info-box">
+								<div class="job-name">ООО "Мега-Юг" - Ведущий дизайнер</div>
+								<div class="job-date">Август 2013 - Ягварь 2015</div>
+							</div>
+						</li>
+						<li class="job-item prefix">
+							<div class="info-icon img-job"></div>
+							<div class="job-info-box">
+								<div class="job-name">КСХ по Магаданской обл. - Системный администратор</div>
+								<div class="job-date">Сентрябрь 2012 - Май 2013</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!--block3//-->
+			<section class="bg-block prefix">
+				<h2 class="section-title">Образование</h2>
+				<div class="entry prefix">
+					<ul class="format-ul">
+						<li class="education-item prefix">
+							<div class="info-icon img-education"></div>
+							<div class="education-info-box">
+								<div class="education-name">Прикладная информатика в экономике. ЛГУ им. А. С. Пушкина</div>
+								<div class="education-date">2006 - 2011</div>
+							</div>
+						</li>
+						<li class="education-item prefix">
+							<div class="info-icon img-diplom"></div>
+							<div class="education-info-box">
+								<div class="education-name">Куры "LoftScool.ru"</div>
+								<div class="education-date">Апрель 2015</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</div>
+	<div class="footer-container">
+	<div class="rgadient-line"></div>
+	<!--footer//-->
+	<footer class="main-footer prefix">
+		<div class="padlock"></div>
+		<div class="footer-info">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+	</footer>
+	
+	
+</div>
+
+	<!-- main js//-->
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
