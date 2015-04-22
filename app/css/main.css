@@ -4,6 +4,7 @@ body{
 	margin: 0;
 	background-image:url(../img/bg-pattern.jpg);
 	height: 100%;
+	
 }
 html{
 height: 100%;
@@ -77,7 +78,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff3f7', end
 	background-position: 0 100%;
 }
 .vk{
-background-image: url(../img/vk.png);
+	background-image: url(../img/vk.png);
 }
 .tw{
 background-image: url(../img/twitter.png);
@@ -87,11 +88,6 @@ background-image: url(../img/facebook.png);
 }
 .gt{
 background-image: url(../img/github.png);
-}
-
-.content-container{
-	margin: 39px auto 0;
-	width: 960px;
 }
 .sidebar{
 	width: 250px;
@@ -103,7 +99,6 @@ background-image: url(../img/github.png);
 	-webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     margin-bottom:23px;
-    
 }
 .sidebar-menu{
 	background: #eff3f7; 
@@ -195,10 +190,41 @@ padding-top: 2px;/*добовляем отсутп высостой с лини�
 	background-color: #51daf8;
 	background-image: url(../img/skype.png);
 }
-/*content*/
+.format-ul{
+	list-style: none;
+	padding:0;
+	margin: 0;
+}
+
 .content-wrap{
 	width: 650px;
 	float:right;
+}
+.bg-block{
+	background: #eff3f7;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    margin-bottom: 26px;
+}
+.section-title{
+	display: inline-block;
+	padding: 15px 23px;
+	margin: 0 0 23px 0;
+	border-bottom: solid 2px #3ba8c0;
+	color: #3ba8c0;
+	font-size: 27px;
+	font-weight: normal;
+}
+.content-container{
+	margin: 39px auto 0;
+	width: 960px;
+	min-height: 100%;
+	padding-bottom:80px; 
+}
+.footer-container{
+	height: 80px;
+	margin-top: -80px;
 }
 .main-footer{
 	width:960px;

@@ -21,4 +21,17 @@
     }
 }());
 
-// Place any jQuery/helper plugins in here.
+// popup form
+    $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide();
+    });
+    //Функция отображения PopUp
+    function PopUpShow(){
+        $("#popup1").show(500);
+    }
+    //Функция скрытия PopUp
+    function PopUpHide(){
+        $("#popup1").hide(500);
+    };
+
