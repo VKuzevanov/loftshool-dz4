@@ -97,10 +97,7 @@ margin-bottom:12px;
     background-position: 50% 50%;
     cursor: pointer;
 }
-.upload-button:hover{
-    transition: .5s;
-    background-color: #3ba8c0;
-}
+
 .upload-input{
     position:absolute; 
     top:0; 
@@ -134,7 +131,4 @@ margin-bottom:12px;
     font-size: 1.188em;
     border:none;
     border-bottom: solid 3px #3ba8c0;
-    /*
-    -webkit-box-shadow: 0 3px 0 0 #3ba8c0;
-    box-shadow: 0 3px 0 0 #3ba8c0;*/
 }

@@ -81,7 +81,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff3f7', end
 	background-image: url(../img/vk.png);
 }
 .tw{
-background-image: url(../img/twitter.png);
+	background-image: url(../img/twitter.png);
 }
 .fb{
 background-image: url(../img/facebook.png);
@@ -206,6 +206,7 @@ padding-top: 2px;/*добовляем отсутп высостой с лини�
 	-webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     margin-bottom: 26px;
+    overflow: hidden;
 }
 .section-title{
 	display: inline-block;
