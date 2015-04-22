@@ -29,6 +29,7 @@
     //Функция отображения PopUp
     function PopUpShow(){
         $("#popup1").show(500);
+         $("#popup1").addClass('form-popup');
     }
     //Функция скрытия PopUp
     function PopUpHide(){

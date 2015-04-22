@@ -249,7 +249,7 @@ padding-top: 2px;/*добовляем отсутп высостой с лини�
 }
 .padlock-link{
 	position: absolute;
-	left: 31px;
+	left: 0;
 	height:32px;
 	width: 20px;
 	text-indent: 100%;/*hide text*/
