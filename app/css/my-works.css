@@ -7,6 +7,9 @@
 	float: left;
 	margin-bottom: 28px;
 }
+.works-item:nth-child(3n+1){
+	clear:left;
+}
 .works-item-wrap{
 	width: 183px;
 	margin: 8px auto 0;

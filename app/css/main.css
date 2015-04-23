@@ -4,6 +4,8 @@ body{
 	margin: 0;
 	background-image:url(../img/bg-pattern.jpg);
 	height: 100%;
+	word-wrap: break-word;
+
 	
 }
 html{
@@ -34,7 +36,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff3f7', end
 .main-header{
 	max-width:1200px;
 	min-width: 960px;
-	height:116px;
+	min-height:116px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -114,8 +116,7 @@ background-image: url(../img/github.png);
 .menu-item-link{
 	padding-left:18px;
 	display: block;
-	width: 250px;
-	height: 71px;
+	min-height: 71px;
 	text-decoration: none;
 	color:#959aa8;
 	line-height:  73px;
@@ -150,7 +151,7 @@ padding-top: 2px;/*добовляем отсутп высостой с лини�
 
 .sidebar-title{
 	font-weight: normal;
-	height: 40px;
+	min-height: 40px;
 	line-height: 43px;
 	display: block;
 	margin: 0;
@@ -167,7 +168,8 @@ padding-top: 2px;/*добовляем отсутп высостой с лини�
 
 }
 .contacts-link{
-	height: 39px;
+	display: block;
+	min-height: 39px;
 	line-height: 39px;
 	color: #fff;
 	font-size: 1.036em;
@@ -261,5 +263,5 @@ padding-top: 2px;/*добовляем отсутп высостой с лини�
 }
 .footer-info{
 	margin:30px auto 0;
-	width: 960px;
+	width: 860px;
 }

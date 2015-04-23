@@ -10,10 +10,11 @@ $(function addColorAndLineMenu() {                                      // Ко�
 });
 
 $(function cutLongText() {
-	var size = 48; //кол-во символов
-	var elem = $('.works-description'); // какой эл. проверяем
+	var size, elem, text;
+    size = 80; //кол-во символов
+	elem = $('.works-description'); // какой эл. проверяем
 	$.each(elem,function(){	
-	var text = $(this).html();	//кол-во самволов в эл-те
+	text = $(this).html();	//кол-во самволов в эл-те
 	if (text.length > size) {text = text.slice(0, size);} //сравниваем
 $(this).html(text + '...');  // добовлаем ...
 });	

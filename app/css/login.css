@@ -56,7 +56,16 @@
     border:none;
     border-bottom: solid 3px #3ba8c0;
 }
-
+.login-submit-button:hover{
+    transition:.3s;
+    border-bottom: solid 3px #48cbe8;
+    background: #3ba8c0;
+}
+.login-submit-button:active{
+    background: #3ba8c0;
+    border-bottom: solid 3px #3ba8c0;
+    color:#48cbe8;
+}
 ::-webkit-input-placeholder {color: #48cbe8;}
 ::-moz-placeholder          {color: #48cbe8;}/* Firefox 19+ */
 :-moz-placeholder           {color: #48cbe8;}/* Firefox 18- */

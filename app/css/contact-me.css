@@ -83,11 +83,34 @@
 	border-bottom: solid 3px #3ba8c0;
 	background: #48cbe8;
 	float: left;
+    transition:.3s;
+}
+.submit-button:hover{
+    transition:.3s;
+    border-bottom: solid 3px #48cbe8;
+    background: #3ba8c0;
+}
+.submit-button:active{
+    background: #3ba8c0;
+    border-bottom: solid 3px #3ba8c0;
+    color:#48cbe8;
 }
 .reset-button{
 	border-bottom: solid 3px #687b8f;
 	background: #849db5;
 	float: right;
+    transition:.3s;
+}
+
+.reset-button:hover{
+    transition:.3s;
+    border-bottom: solid 3px #849db5;
+    background: #687b8f;
+}
+.reset-button:active{
+    background: #687b8f;
+    border-bottom: solid 3px #687b8f;
+    color:#849db5;
 }
 ::-webkit-input-placeholder {color: #48cbe8;}
 ::-moz-placeholder          {color: #48cbe8;}/* Firefox 19+ */
