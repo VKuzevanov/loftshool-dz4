@@ -265,12 +265,16 @@ padding-top: 2px;/*добовляем отсутп высостой с лини�
 .padlock-link{
 	position: absolute;
 	left: 0;
-	bottom: 9999px;
 	height:32px;
 	width: 20px;
+	
+}
+.padlock-link-span{
 	text-indent: 100%;/*hide text*/
   	white-space: nowrap;/*hide text*/
- 	 overflow: hidden;/*hide text*/
+ 	overflow: hidden;/*hide text*/
+ 	bottom: 9999px;
+ 	position: relative;
 }
 .padlock:hover{
 	background-position: 0 0;
