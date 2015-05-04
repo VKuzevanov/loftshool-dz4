@@ -38,7 +38,7 @@
         <!-- heder -->
         <div class="header-container">
             <header class="main-header clearfix">
-                <a class="logo-link" href="http://localhost:8888">
+                <a class="logo-link" href="http://app:8888">
                     <img src="img/loft-logo.png" alt="Логотип сайта">
                     <span class="logo-discription">LoftShool</span>
                 </a>
@@ -55,9 +55,9 @@
             <aside class="sidebar">
                 <nav class="sidebar-block sidebar-menu">
                     <ul class="format-ul">
-                        <li class="menu-item"><a class="menu-item-link" href="http://localhost:8888">Обо мне</a></li>
-                        <li class="menu-item"><a class="menu-item-link" href="http://localhost:8888/my-works.html">Мои работы</a></li>
-                        <li class="menu-item"><a class="menu-item-link" href="http://localhost:8888/contact-me.html">Связаться со мной</a></li>
+                        <li class="menu-item"><a class="menu-item-link" href="http://app:8888">Обо мне</a></li>
+                        <li class="menu-item"><a class="menu-item-link" href="http://app:8888/my-works.html">Мои работы</a></li>
+                        <li class="menu-item"><a class="menu-item-link" href="http://app:8888/contact-me.html">Связаться со мной</a></li>
                     </ul>
                 </nav>
                 <div class="sidebar-block">
@@ -86,9 +86,7 @@
                                         </div>
                                     </div>
                                     <a href="#" class="works-name">www.site.ru</a>
-                                    <div class="works-description">
-                                        Информация о проекте 1 превью 2 строки а этого не видно
-                                    </div>
+                                    <div class="works-description">Информация о проекте 1 превью 2 строки а этого не видно</div>
                                 </div>
                             </li>
                             <li class="works-item">
@@ -100,9 +98,7 @@
                                         </div>
                                     </div>
                                     <a href="#" class="works-name">www.site.ru</a>
-                                    <div class="works-description">
-                                        Информация о проекте 1 превью 2 строки а этого не видно
-                                    </div>
+                                    <div class="works-description">Информация о проекте 1 превью 2 строки а этого не видно</div>
                                 </div>
                             </li>
                             <li class="works-item">
@@ -114,9 +110,7 @@
                                         </div>
                                     </div>
                                     <a href="#" class="works-name">www.site.ru</a>
-                                    <div class="works-description">
-                                        Информация о проекте 1 превью 2 строки а этого не видно
-                                    </div>
+                                    <div class="works-description">Информация о проекте 1 превью 2 строки а этого не видно</div>
                                 </div>
                             </li>
                             <li class="works-item">
@@ -128,9 +122,7 @@
                                         </div>
                                     </div>
                                     <a href="#" class="works-name">www.site.ru</a>
-                                    <div class="works-description">
-                                        Информация о проекте 1 превью 2 строки а этого не видно
-                                    </div>
+                                    <div class="works-description">Информация о проекте 1 превью 2 строки а этого не видно</div>
                                 </div>
                             </li>
                             <li class="works-item">
@@ -147,7 +139,7 @@
         <div class="footer-container">
             <footer class="main-footer clearfix">
                 <div class="padlock">
-                    <a class="padlock-link" href="http://localhost:8888/login.html">Войти</a>
+                    <a class="padlock-link" href="http://app:8888/login.html">Войти</a>
                 </div>
                 <div class="footer-info">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
             </footer>
@@ -159,31 +151,42 @@
 					<a  href="javascript:PopUpHide()" class="close-popup-link">Закрыть форму</a>
                 </div>
                 <div class="popup-entry">
-                <form name="contact-me" action="" method="GET">
+                <div id="error" class="form-tooltip form-error hidden">
+                    <span class="toolltip-title">Ошибка!</span>
+                    невозможно добавить проект
+                </div>   
+                <div id="upload-done" class="form-tooltip form-done hidden">
+                    <span class="toolltip-title">Ура!</span>
+                   проект успешно добавлен
+                </div>  
+                <form name="contact-me" action="#" method="post" id="contact-me" >
                 	
                 	<div class="form-input-wrap">
                 		<label for="name-project" class="form-block label-form">Название проекта</label>
-                		<input type="text" id="name-project" class="form-block input-form" name="name-poject" placeholder="Введите название">
+                		<input type="text" id="name-project" class="form-block input-form " name="name-poject" placeholder="Введите название" data-validation="nameProject">
+                        <div class="tooltip-input-error hidden">Введите название</div>
                 	</div>
-
+                        
                 	<div class="form-input-wrap">
                 		<label for="upload" class="form-block label-form" id="file_name">Картинка проекта</label>
-						<div class="upload-file-input">
-                			<div class="upload-button"></div>
-                				<input id="fileName" class="form-block input-form" readonly="readonly" placeholder="Загрузите изображение" />
-                		       
-                		        <input type="file" id="upload" class="upload-input" name="upload" onchange="document.getElementById('fileName').value=this.value;" >
-                		</div>
+                			
+                				<input id="fileName" class="form-block input-form" readonly="readonly" placeholder="Загрузите изображение" >
+                		        <input type="file" id="upload" class="upload-input" name="upload" onchange="document.getElementById('fileName').value=this.value;" enctype="multipart/form-data" data-validation="uploadProject" >
+                                <div class="upload-button"></div>
+                		
+                        <div class="tooltip-input-error hidden">Изображение</div>
                 	</div>
 
                 	<div class="form-input-wrap">
                 		<label for="url-project" class="form-block label-form">URL проекта</label>
-                		<input type="text" id="url-project" class="form-block input-form" name="url-project" placeholder="Добавте ссылку">
+                		<input type="text" id="url-project" class="form-block input-form" name="url-project" placeholder="Добавте ссылку" data-validation="urlProject">
+                        <div class="tooltip-input-error hidden">Ссылка на проект</div>
                 	</div>
 
                 	<div class="form-input-wrap">
                 		<label for="description-project" class="form-block label-form">Описание</label>
-                		<textarea type="text" id="description-project" class="form-block input-form textarea-form" name="description-poject" placeholder="Пара слов о Вашем проекте"></textarea> 
+                		<textarea type="text" id="description-project" class="form-block input-form textarea-form" name="description-poject" placeholder="Пара слов о Вашем проекте" data-validation="txtProject"></textarea> 
+                        <div class="tooltip-input-error hidden">Описание проекта</div>
                 	</div>
 
                 	<div class="form-submit-wrap">

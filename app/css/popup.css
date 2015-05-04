@@ -2,26 +2,30 @@
     width:100%;
     min-height:100%;
     background: rgba(1, 108, 164, .5);
-    overflow:hidden;
+    
     position:fixed;
     top:0px;
 }
 .form-popup .form-popup-content{
     margin:60px auto 0px auto;
     width:386px;
-    height: 517px;
+    height:100%;
     background-color: #eff3f7;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     box-shadow: 0px 0px 10px #000;
-    overflow: hidden;
+   
 }
 .form-popup-title-wrap{
     position: relative;
     background: #48cbe8;
     border-bottom:solid 9px #67dffa ;
     margin-bottom:12px; 
+    overflow:hidden;
+     border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
 }
 .form-popup-title{
     display: inline-block;
@@ -48,10 +52,12 @@
 }
 .popup-entry{
     
-    margin: 0 21px;
+    margin: 0 21px 21px;
+    height: 100%;
 }
 .form-input-wrap{
 margin-bottom:12px; 
+position:relative;
 }
 .form-block{
     display: block;
@@ -88,8 +94,8 @@ margin-bottom:12px;
 }
 .upload-button{
     position: absolute;
-    right: 0;
-    top:0;
+    right: -1px;
+    bottom:0;
     height: 40px;
     width: 52px;
     background-color: #48cbe8;
@@ -101,7 +107,7 @@ margin-bottom:12px;
 
 .upload-input{
     position:absolute; 
-    top:0; 
+    bottom:0; 
     left:0; 
     width:100%; 
     -moz-opacity: 0; 
@@ -145,3 +151,68 @@ margin-bottom:12px;
     border-bottom: solid 3px #3ba8c0;
     color:#48cbe8;
 }
+
+/*tooltip*/
+
+.form-tooltip{
+
+    padding: 5px 10px;
+    width:94%;
+    background-repeat: no-repeat;
+    background-position: 98%  10%;
+    border-radius: 4px;
+    min-height: 30px;
+    margin-bottom: 10px;
+    font-size: 0.938em;
+}
+.form-error{
+    color:#f97e76;
+    background-color: #f2cccd;
+    border:solid 1px #f97e76;
+    background-image: url(../img/close-allert-r.png);
+}
+.form-done{
+    color:#49bb7b;
+    background-color: #b8e1ce;
+    border:solid 1px #49bb7b;
+    background-image: url(../img/close-allert-g.png);
+}
+.toolltip-title{
+    display: block;
+    font-size: 1.563em;
+}
+.tooltip-input-error{
+    position: absolute;
+    color:#fff;
+    font-size: 0.813em;
+    background:#f97e76;
+    border-radius: 4px;
+    display: inline;
+    padding: 3px 17px;
+    right: 102%;
+    top: 50%;
+    left: auto;
+    white-space: pre;
+    
+}
+.tooltip-input-error:after{
+content:'';
+display:block;
+position:absolute;
+top: 30%;
+left: 100%;
+width:0;
+height:0; 
+border-left: 10px solid #f97e76;
+border-top: 5px solid transparent;
+border-bottom: 5px solid transparent;
+}
+.input-error{
+    background-color: #f2cccd;
+border:solid 1px #f97e76;
+}
+
+.hidden{
+display: none;
+}
+

@@ -1,22 +1,38 @@
-$(function addColorAndLineMenu() {                                      // Когда страница загрузится
-    $('.menu-item a').each(function () {             // получаем все нужные нам ссылки
-        var location = window.location.href; // получаем адрес страницы
-        var link = this.href;                // получаем адрес ссылки
-        if(location == link) {               // при совпадении адреса ссылки и адреса окна
-            $(this).parent().addClass('active');  //добавляем класс родительскому элементу ссылки (добовляем подсветку)
-            $(this).parent().prev().addClass('no-line');//добавляем класс предыдущему родительскому элементу ссылки (убираем линию)
+
+$(function addColorAndLineMenu() {
+    $('.menu-item a').each(function () {
+        // получаем адрес страницы  и игнорируем в ссылке брааузера POSTданные при добавлении нового проекта          
+        var location = window.location.href.split('?')[0], 
+        // получаем адрес ссылки
+            link = this.href;
+            // при совпадении адреса ссылки и адреса окна
+            if(location == link) {
+            //добавляем класс родительскому элементу ссылки (добовляем подсветку)
+            $(this).parent().addClass('active');
+            //добавляем класс предыдущему родительскому элементу ссылки (убираем линию)
+            $(this).parent().prev().addClass('no-line');
         }
     });
 });
 
 $(function cutLongText() {
-	var size, elem, text;
-    size = 80; //кол-во символов
-	elem = $('.works-description'); // какой эл. проверяем
-	$.each(elem,function(){	
-	text = $(this).html();	//кол-во самволов в эл-те
-	if (text.length > size) {text = text.slice(0, size);} //сравниваем
-$(this).html(text + '...');  // добовлаем ...
-});	
+	var 
+     //кол-во символов
+    size = 38,
+    // какой эл. проверяем
+	elem = $('div.works-description');
+	
+    $.each(elem, function(){
+        //кол-во самволов в эл-те
+	   var text = $(this).html();
+       //сравниваем
+	       if (text.length > size) {
+            text = text.slice(0, size);
+        }
+        // добовлаем ...
+        $(this).html(text + '...');
+    });
 });
+
+
 
