@@ -25,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/my-works.css">
     <link rel="stylesheet" type="text/css" href="css/popup.css">
+    <link rel="stylesheet" href="css/tooltip.css">
     <!-- JS -->
 
     <script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
@@ -43,10 +44,10 @@
                     <span class="logo-discription">LoftShool</span>
                 </a>
                 <ul class="format-ul socials">
-                    <li class="social"><a class="social-link vk" href="#" target="_balank">Вконтакте</a></li>
-                    <li class="social"><a class="social-link tw" href="#" target="_balank">Twitter</a></li>
-                    <li class="social"><a class="social-link fb" href="#" target="_balank">Facebook</a></li>
-                    <li class="social"><a class="social-link gt" href="#" target="_balank">Github</a></li>
+                    <li class="social"><a class="social-link vk" href="#" target="_balank"><span class="social-name">Вконтакте</span></a></li>
+                    <li class="social"><a class="social-link tw" href="#" target="_balank"><span class="social-name">Twitter</span></a></li>
+                    <li class="social"><a class="social-link fb" href="#" target="_balank"><span class="social-name">Facebook</span></a></li>
+                    <li class="social"><a class="social-link gt" href="#" target="_balank"><span class="social-name">Github</span></a></li>
                 </ul>
             </header>
         </div>
@@ -159,37 +160,37 @@
                     <span class="toolltip-title">Ура!</span>
                    проект успешно добавлен
                 </div>  
-                <form name="contact-me" action="#" method="post" id="contact-me" >
+                <form name="addProject" action="#" method="post" id="addProject" >
                 	
-                	<div class="form-input-wrap">
+                	<div class="form-input-wrap js-input-wrap">
                 		<label for="name-project" class="form-block label-form">Название проекта</label>
                 		<input type="text" id="name-project" class="form-block input-form " name="name-poject" placeholder="Введите название" data-validation="nameProject">
-                        <div class="tooltip-input-error hidden">Введите название</div>
+                        <div class="tooltip-input-error tooltip-error-left hidden">Введите название</div>
                 	</div>
                         
-                	<div class="form-input-wrap">
+                	<div class="form-input-wrap js-input-wrap">
                 		<label for="upload" class="form-block label-form" id="file_name">Картинка проекта</label>
                 			
                 				<input id="fileName" class="form-block input-form" readonly="readonly" placeholder="Загрузите изображение" >
                 		        <input type="file" id="upload" class="upload-input" name="upload" onchange="document.getElementById('fileName').value=this.value;" enctype="multipart/form-data" data-validation="uploadProject" >
                                 <div class="upload-button"></div>
                 		
-                        <div class="tooltip-input-error hidden">Изображение</div>
+                        <div class="tooltip-input-error tooltip-error-left hidden">Изображение</div>
                 	</div>
 
-                	<div class="form-input-wrap">
+                	<div class="form-input-wrap js-input-wrap">
                 		<label for="url-project" class="form-block label-form">URL проекта</label>
                 		<input type="text" id="url-project" class="form-block input-form" name="url-project" placeholder="Добавте ссылку" data-validation="urlProject">
-                        <div class="tooltip-input-error hidden">Ссылка на проект</div>
+                        <div class="tooltip-input-error tooltip-error-left hidden">Ссылка на проект</div>
                 	</div>
 
-                	<div class="form-input-wrap">
+                	<div class="form-input-wrap js-input-wrap">
                 		<label for="description-project" class="form-block label-form">Описание</label>
                 		<textarea type="text" id="description-project" class="form-block input-form textarea-form" name="description-poject" placeholder="Пара слов о Вашем проекте" data-validation="txtProject"></textarea> 
-                        <div class="tooltip-input-error hidden">Описание проекта</div>
+                        <div class="tooltip-input-error tooltip-error-left hidden">Описание проекта</div>
                 	</div>
 
-                	<div class="form-submit-wrap">
+                	<div class="form-submit-wrap js-input-wrap">
                 		<input type="submit" name="submit" class="form-submit-button" value="Добваить">
                 	</div>
                 </form>
@@ -201,6 +202,7 @@
         <script>
         window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')
         </script>
+        <script type="text/javascript" src="bower//jquery-placeholder/jquery.placeholder.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/plugins.js"></script>
 </body>

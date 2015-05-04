@@ -33,6 +33,3 @@ $(function cutLongText() {
         $(this).html(text + '...');
     });
 });
-
-
-

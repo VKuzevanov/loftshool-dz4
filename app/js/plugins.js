@@ -43,7 +43,7 @@ $(document).ready(function(){
         $('form').trigger( 'reset' );
         //прячем сообщение об успехе и показываем форму при повтороной загрузке 
         $('#upload-done').hide();
-        $('#contact-me').show();
+        $('form').show();
         }
 
  
@@ -83,7 +83,7 @@ $(function() {
             }
             else{
             $('#upload-done').show();
-            $('#contact-me').hide();
+            $('#addProject').hide();
             console.log('go in ajax');
             }
 
@@ -93,18 +93,15 @@ $(function() {
 
             var     
                 //используем все поля кроме  submit и ложного поля картинки проекта
-                inputs = form.find('input, textarea').not('input[id="fileName"], input[type="submit"]'),
+                inputs = form.find('input, textarea').not('input[id="fileName"], input[type="submit"], input[type="reset"] '),
                 valid = true;
-
-                
-
+               
             $.each(inputs, function(i, val) {
                 var 
                     input = $(val),
                     val = input.val(),
-                    formGroup = input.parents('.form-input-wrap');
-                    console.log(val);
-
+                    formGroup = input.parents('.js-input-wrap');
+                                
                 if(val.length === 0) {
                     $('#error').show();
                     formGroup.find('.tooltip-input-error').show();
@@ -133,3 +130,7 @@ $(function() {
     
 }());
    
+//placeholer for IE
+$(function() {
+ $('input, textarea').placeholder();
+});

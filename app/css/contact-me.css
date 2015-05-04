@@ -8,18 +8,20 @@
     font-weight: normal;
     margin-bottom: 48px; 
     margin-top: 0; 
+    border-radius:4px 4px 0 0;
 }
 .cotactme-entry{
 	width: 402px;
 	margin: 0 auto 20px;
+   
 }
 .contactme-form-input-wrap-left{
-	display: block;
+	
 	float: left;
 	margin-bottom: 16px; 
 }
 .contactme-form-input-wrap-right{
-	display: block;
+	
 	float: right;
 	margin-bottom: 16px;
 }
@@ -43,6 +45,7 @@
     font-family: 'fira_sanslight';
     font-size: 0.813em;
     display: block;
+    position: relative;
 }
 .small-input{
 	width: 181px;

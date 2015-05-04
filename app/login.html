@@ -24,6 +24,7 @@
     <!-- main css -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" href="css/tooltip.css">
   
     <!-- JS -->
 
@@ -44,13 +45,15 @@
                     <div class="login-entry clearfix">
                         <form name="login-form" action="" method="GET">
                     
-                            <div class="login-form-input-wrap">
+                            <div class="login-form-input-wrap js-input-wrap">
                                 <label for="login" class="login-label-form">Логин</label>
-                                <input type="text" id="login" class="login-input-form" name="login" placeholder="Введите логин">
+                                <input type="text" id="login" class="login-input-form input-form" name="login" placeholder="Введите логин">
+                                <div class="tooltip-login tooltip-input-error tooltip-error-left hidden">Введите логин</div>
                             </div>
-                            <div class="login-form-input-wrap">
+                            <div class="login-form-input-wrap js-input-wrap">
                                 <label for="password" class="login-label-form">Пароль</label>
-                                <input type="password" id="password" class="login-input-form" name="password" placeholder="Введите пароль">
+                                <input type="password" id="password" class="login-input-form input-form" name="password" placeholder="Введите пароль">
+                                <div class="tooltip-login tooltip-input-error tooltip-error-left hidden">Введите пароль</div>
                             </div>                     
                             <div class="login-submit-wrap">
                                 <input type="submit" name="submit" class="login-submit-button" value="Войти">
@@ -68,11 +71,12 @@
                 <div class="footer-info">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
             </footer>
         </div>
-        <!-- main js -->
+       <!-- main js -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>
         window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')
         </script>
+        <script type="text/javascript" src="bower//jquery-placeholder/jquery.placeholder.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/plugins.js"></script>
 </body>
