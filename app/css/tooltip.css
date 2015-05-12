@@ -1,84 +1,104 @@
 /*tooltip*/
-
-.form-tooltip{
-
-    padding: 5px 10px;
-    width:94%;
-    background-repeat: no-repeat;
-    background-position: 98%  10%;
-    border-radius: 4px;
-    min-height: 30px;
-    margin-bottom: 10px;
-    font-size: 0.938em;
-}
-.form-error{
-    color:#f97e76;
-    background-color: #f2cccd;
-    border:solid 1px #f97e76;
-    background-image: url(../img/close-allert-r.png);
-}
-.form-done{
-    color:#49bb7b;
-    background-color: #b8e1ce;
-    border:solid 1px #49bb7b;
-    background-image: url(../img/close-allert-g.png);
-}
-.toolltip-title{
-    display: block;
-    font-size: 1.563em;
-}
-.tooltip-input-error{
-    position: absolute;
-    color:#fff;
-    font-size: 0.813em;
-    background:#f97e76;
-    border-radius: 4px;
-    display: inline;
-    padding: 3px 17px;
-   
-    top: 50%;
-  
-    white-space: pre;
-    
-}
-.tooltip-error-right{
-     left: 102%;
-     right: auto;
-}
-.tooltip-error-left{
-    right: 102%;
-    left: auto;
+/* line 3, ../sass/tooltip.scss */
+.form-tooltip {
+  padding: 5px 10px;
+  width: 94%;
+  background-repeat: no-repeat;
+  background-position: 98%  10%;
+  border-radius: 4px;
+  min-height: 30px;
+  margin-bottom: 10px;
+  font-size: 0.938em;
 }
 
-.tooltip-error-right:after{
-right: 100%;
-border-right: 10px solid #f97e76;
-}
-.tooltip-error-left:after{
-left: 100%;
-border-left: 10px solid #f97e76;
-}
-.tooltip-input-error:after{
-content:'';
-display:block;
-position:absolute;
-top: 30%;
-width:0;
-height:0; 
-border-top: 5px solid transparent;
-border-bottom: 5px solid transparent;
-}
-.input-error{
-    background-color: #f2cccd;
-border:solid 1px #f97e76;
+/* line 14, ../sass/tooltip.scss */
+.form-error {
+  color: #f97e76;
+  background-color: #f2cccd;
+  border: solid 1px #f97e76;
+  background-image: url(../img/close-allert-r.png);
 }
 
-.hidden{
-display: none;
+/* line 20, ../sass/tooltip.scss */
+.form-done {
+  color: #49bb7b;
+  background-color: #b8e1ce;
+  border: solid 1px #49bb7b;
+  background-image: url(../img/close-allert-g.png);
 }
-.tooltip-login{
-    top:63%;
+
+/* line 26, ../sass/tooltip.scss */
+.toolltip-title {
+  display: block;
+  font-size: 1.563em;
 }
-.tooltip-contact-me{
-    top:47%;
+
+/* line 30, ../sass/tooltip.scss */
+.tooltip-input-error {
+  position: absolute;
+  color: #fff;
+  font-size: 0.813em;
+  background: #f97e76;
+  border-radius: 4px;
+  display: inline;
+  padding: 3px 17px;
+  top: 50%;
+  white-space: pre;
+}
+
+/* line 44, ../sass/tooltip.scss */
+.tooltip-error-right {
+  left: 102%;
+  right: auto;
+}
+
+/* line 48, ../sass/tooltip.scss */
+.tooltip-error-left {
+  right: 102%;
+  left: auto;
+}
+
+/* line 53, ../sass/tooltip.scss */
+.tooltip-error-right:after {
+  right: 100%;
+  border-right: 10px solid #f97e76;
+}
+
+/* line 57, ../sass/tooltip.scss */
+.tooltip-error-left:after {
+  left: 100%;
+  border-left: 10px solid #f97e76;
+}
+
+/* line 61, ../sass/tooltip.scss */
+.tooltip-input-error:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 30%;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+/* line 71, ../sass/tooltip.scss */
+.input-error {
+  background-color: #f2cccd;
+  border: solid 1px #f97e76;
+}
+
+/* line 76, ../sass/tooltip.scss */
+.hidden {
+  display: none;
+}
+
+/* line 79, ../sass/tooltip.scss */
+.tooltip-login {
+  top: 63%;
+}
+
+/* line 82, ../sass/tooltip.scss */
+.tooltip-contact-me {
+  top: 47%;
 }

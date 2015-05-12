@@ -1,0 +1,121 @@
+.contactme-section-title{
+	padding: 50px 0;
+	color: #fff;
+	font-size: 1.688em;
+	background: #48cbe8;
+    border-bottom:solid 17px #67dffa ;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 48px; 
+    margin-top: 0; 
+    border-radius:4px 4px 0 0;
+}
+.cotactme-entry{
+	width: 402px;
+	margin: 0 auto 20px;
+   
+}
+.contactme-form-input-wrap-left{
+	
+	float: left;
+	margin-bottom: 16px; 
+}
+.contactme-form-input-wrap-right{
+	
+	float: right;
+	margin-bottom: 16px;
+}
+.contactme-form-input-wrap{
+	display: block;
+	width: 100%;
+	margin-bottom: 16px;
+}
+.label-form{
+    font-size: 1.188em; 
+    margin-bottom: 8px;
+    display: block;
+}
+.input-form{
+    border: solid 1px #3ba8c0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    height: 37px;
+    padding-left:9px;
+    font-family: 'fira_sanslight';
+    font-size: 0.813em;
+    display: block;
+    position: relative;
+}
+.small-input{
+	width: 181px;
+
+}
+.contactme-textarea-form{
+	width: 390px;
+	height: 168px;
+	padding-top: 13px;
+}
+.capcha{
+	 border: solid 1px #3ba8c0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    background: #fff;
+    width: 181px;
+    height: 76px;
+    line-height: 90px;
+    text-align: center;
+}
+.capcha-cod{
+	margin-top:22px; 
+	height: 30px;
+}
+.contactme-form-button{
+ 	color:#fff;
+    width: 140px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    font-size: 1.188em;
+    border:none;
+    display: block;
+	cursor: pointer;
+}
+.submit-button{
+	border-bottom: solid 3px #3ba8c0;
+	background: #48cbe8;
+	float: left;
+    transition:.3s;
+}
+.submit-button:hover{
+    transition:.3s;
+    border-bottom: solid 3px #48cbe8;
+    background: #3ba8c0;
+}
+.submit-button:active{
+    background: #3ba8c0;
+    border-bottom: solid 3px #3ba8c0;
+    color:#48cbe8;
+}
+.reset-button{
+	border-bottom: solid 3px #687b8f;
+	background: #849db5;
+	float: right;
+    transition:.3s;
+}
+
+.reset-button:hover{
+    transition:.3s;
+    border-bottom: solid 3px #849db5;
+    background: #687b8f;
+}
+.reset-button:active{
+    background: #687b8f;
+    border-bottom: solid 3px #687b8f;
+    color:#849db5;
+}
+::-webkit-input-placeholder {color: #48cbe8;}
+::-moz-placeholder          {color: #48cbe8;}/* Firefox 19+ */
+:-moz-placeholder           {color: #48cbe8;}/* Firefox 18- */
+:-ms-input-placeholder      {color: #48cbe8;}

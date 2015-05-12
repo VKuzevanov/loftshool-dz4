@@ -1,0 +1,288 @@
+body{
+	font-family: 'fira_sansbook';
+	color: #959aa8;
+	margin: 0;
+	background-image:url(../img/bg-pattern.jpg);
+	height: 100%;
+	word-wrap: break-word;
+
+	
+}
+html{
+height: 100%;
+}
+.header-container, .footer-container{
+	width: 100%;
+	background-color: #eff3f7;
+}
+
+.header-container:after, .footer-container:before{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 3px; 
+	background: #eff3f7; 
+	/* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VmZjNmNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzFkNjY3YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZmYzZjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(left,  #eff3f7 0%, #1d667a 50%, #eff3f7 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#eff3f7), color-stop(50%,#1d667a), color-stop(100%,#eff3f7)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #eff3f7 0%,#1d667a 50%,#eff3f7 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #eff3f7 0%,#1d667a 50%,#eff3f7 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #eff3f7 0%,#1d667a 50%,#eff3f7 100%); /* IE10+ */
+background: linear-gradient(to right,  #eff3f7 0%,#1d667a 50%,#eff3f7 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff3f7', endColorstr='#eff3f7',GradientType=1 ); /* IE6-8 */
+}
+.main-header{
+	max-width:1200px;
+	min-width: 960px;
+	min-height:116px;
+	margin: 0 auto;
+	position: relative;
+}
+.logo-link{
+	position: absolute;
+	top:39px;
+	left: 0;
+}
+.logo-discription{
+	
+	display: block;
+	width: 0;
+	
+	text-indent: 100%;/*hide text*/
+   	white-space: nowrap;/*hide text*/
+    overflow: hidden;/*hide text*/
+}
+.socials{
+	position: absolute;
+	height: 47px;
+	min-width: 260px;
+	top:36px;
+	right: 0;
+	font-size:0; /* убираем горизонтальные отступы */
+	line-height:0; /* ...и вертикальные в некоторых браузерах */
+	letter-spacing:-1px; /* переубеждаем webkit'ы */
+}
+.social{
+
+	line-height:normal;
+	letter-spacing:normal;
+	display: -moz-inline-stack!important;
+	display:inline-block;
+	//display:inline;
+	zoom:1;
+	margin:0 0 0 19px;
+	padding: 0;
+}
+.social:first-child{
+	margin-left:0;
+}
+.social-link{
+	display: block;
+	width: 47px;
+	height: 47px;
+    background-repeat: no-repeat; 
+	background-position: 0 0;
+}
+.social-name{
+    position:relative;
+    top:  -100px;
+}
+.social-link:hover{
+	background-position: 0 100%;
+}
+.vk{
+	background-image: url(../img/vk.png);
+}
+.tw{
+	background-image: url(../img/twitter.png);
+}
+.fb{
+background-image: url(../img/facebook.png);
+}
+.gt{
+background-image: url(../img/github.png);
+}
+.sidebar{
+	width: 250px;
+	float:left;
+}
+.sidebar-block{
+	overflow: hidden;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    margin-bottom:23px;
+}
+.sidebar-menu{
+	background: #eff3f7; 
+ }
+ /*МЕНЮ*/
+  .menu-item{
+	color:#959aa8;
+	list-style: none;
+	border-bottom: solid 2px #3ba8c0;/* линия не активного меню */
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.menu-item-link{
+	padding-left:18px;
+	display: block;
+	min-height: 71px;
+	text-decoration: none;
+	color:#959aa8;
+	line-height:  73px;
+	font-size: 1.3em;
+	
+}
+.menu-item:last-child, .active, .no-line{
+	border-bottom:none;
+
+}
+.menu-item-link:hover{
+	color:#3ba8c0;
+
+}
+.active{
+	margin-left: 0;
+	margin-right: 0;
+}
+.active a, .active:hover a{
+	background:#3ba8c0;
+	color: #fff;
+
+}
+.active .menu-item-link{
+padding-left:28px;
+padding-top: 2px;/*добовляем отсутп высостой с линию*/
+}
+.no-line .menu-item-link,.menu-item:last-child{
+	padding-top: 2px; /*добовляем отсутп высостой с линию*/
+}
+/*Конец МЕНЮ*/
+
+.sidebar-title{
+	font-weight: normal;
+	min-height: 40px;
+	line-height: 43px;
+	display: block;
+	margin: 0;
+	font-size: 1.4em;
+	color:#fff;
+	background: #3ba8c0;
+	padding-left:21px;  
+
+}
+.contacts-item{
+	list-style: none;
+	background-repeat: no-repeat;
+	background-position:42px 50%;
+
+}
+.contacts-link{
+	display: block;
+	min-height: 39px;
+	line-height: 39px;
+	color: #fff;
+	font-size: 1.036em;
+	padding-left: 83px;
+	text-decoration: none;
+	
+}
+.contacts-link:hover{
+	text-decoration:underline;
+}
+.mail{
+	background-color: #41b9d4;
+	background-image: url(../img/mail.png);
+}
+.tel{
+	background-color: #48cbe8;
+	background-image: url(../img/phone.png);
+}
+.skype{
+	background-color: #51daf8;
+	background-image: url(../img/skype.png);
+}
+.format-ul{
+	list-style: none;
+	padding:0;
+	margin: 0;
+}
+
+.content-wrap{
+	width: 650px;
+	float:right;
+}
+.bg-block{
+	background: #eff3f7;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    margin-bottom: 26px;
+    
+}
+.section-title{
+	display: inline-block;
+	padding: 15px 23px;
+	margin: 0 0 23px 0;
+	border-bottom: solid 2px #3ba8c0;
+	color: #3ba8c0;
+	font-size: 27px;
+	font-weight: normal;
+}
+.content-container{
+	margin: 39px auto 0;
+	width: 960px;
+	min-height: 100%;
+	padding-bottom:80px; 
+}
+.footer-container{
+	height: 80px;
+	margin-top: -80px;
+}
+.main-footer{
+	width:960px;
+	height:78px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'fira_sanslight';
+	font-size: 0.813em;
+	color:#4a545d;
+	position: relative;
+}
+.padlock{
+	position: absolute;
+	left: 0;
+	top:23px;
+	height:32px;
+	width: 20px;
+	background-image: url(../img/padlock.png);
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+}
+.padlock-link{
+	position: absolute;
+	left: 0;
+	height:32px;
+	width: 20px;
+	
+}
+.padlock-link-span{
+	text-indent: 100%;/*hide text*/
+  	white-space: nowrap;/*hide text*/
+ 	overflow: hidden;/*hide text*/
+ 	bottom: 9999px;
+ 	position: relative;
+}
+.padlock:hover{
+	background-position: 0 0;
+}
+.footer-info{
+	margin:30px auto 0;
+	width: 860px;
+}
+.js-input-wrap{
+	position:relative;
+}
