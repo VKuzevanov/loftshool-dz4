@@ -7,14 +7,14 @@ gulp.task('connect', function() {
   connect.server({
     root: 'app',
     livereload: true,
-    port: 8888
+    port: 8080
   });
-  opn('http://app:8888');
+  opn('http://app:8080');
 });
 
  // HTML
-gulp.task('html', function () {
-  gulp.src('./app/*.html')
+gulp.task('php', function () {
+  gulp.src('./app/*.php')
     .pipe(connect.reload());
 });
 
@@ -33,7 +33,7 @@ gulp.task('js', function () {
 
  // Слежение
 gulp.task('watch', function () {
-  gulp.watch(['./app/*.html'], ['html']);
+  gulp.watch(['./app/*.php'], ['php']);
   gulp.watch(['./app/css/*.css'], ['css']);
   gulp.watch(['./app/js/*.js'], ['js']);
 });
